@@ -1,0 +1,62 @@
+Introduction to Data Structures and Algorithms (DSA)
+
+What is a Data Structure?
+
+A data structure is a structured way of organizing, storing, and managing data in a system to enable efficient access and modification.
+
+What is an Algorithm?
+
+An algorithm is a finite sequence of well-defined instructions designed to solve a specific problem efficiently.
+
+How do we measure the efficiency of a data structure or algorithm?
+
+Efficiency is evaluated using:
+	•	Time Complexity – Measures how the execution time grows as the input size increases.
+	•	Space Complexity – Measures the amount of memory an algorithm uses.
+
+Gale-Shapley Algorithm
+
+The Gale-Shapley algorithm is used to solve the Stable Matching Problem, where the goal is to match two sets of entities optimally (e.g., college admissions, job assignments, or stable marriages).
+
+To implement this efficiently, we use Abstract Data Types (ADTs) like:
+	•	Stack – For handling backtracking scenarios.
+	•	Queue – For maintaining a list of entities to process.
+
+Abstract Data Type (ADT)
+
+An ADT (Abstract Data Type) is a high-level description of a data structure that specifies its behavior without revealing implementation details. It is usually a combination of primitive data types.
+
+Example (C language: Student Structure):
+    struct student {
+        int roll_no; 
+        char *name; 
+        int mat_nr;
+    };
+
+Introduction to Graphs
+
+What is a Graph?
+
+A graph is a data structure that represents relationships between objects. It consists of:
+	•	Nodes (Vertices) – Represent entities.
+	•	Edges – Represent connections between nodes.
+
+Graphs can be directed (edges have direction) or undirected (edges have no direction).
+
+Graph Traversal Techniques
+
+To explore graphs, we use two main traversal algorithms:
+	1.	Breadth-First Search (BFS)
+	•	Starts at a given node and explores all neighboring nodes first before moving deeper.
+	•	Requires a Queue to store the next nodes to visit.
+	•	Used in shortest path algorithms (e.g., Dijkstra’s Algorithm).
+
+	2.	Depth-First Search (DFS)
+	•	Starts at a node and explores as deep as possible before backtracking.
+	•	Requires a Stack (or recursion) to keep track of nodes.
+	•	Used in cycle detection and maze-solving problems.
+
+How BFS Works (Queue-Based Approach)
+	1.	Start from a node and enqueue it.
+	2.	Dequeue a node, visit it, and enqueue all its unvisited neighbors.
+	3.	Repeat until the queue is empty.
